@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAIRON Obras | Project controls para obras</title>
+<meta name="description" content="KAIRON Obras: project controls para obras de médio porte no RJ. Cronograma físico-financeiro, medição, Curva S e painel semanal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 22 26%22%3E%3Cpath d=%22M3 2h16M3 24h16M5 2c0 6 12 7 12 11s-12 5-12 11M17 2c0 6-12 7-12 11s12 5 12 11%22 fill=%22none%22 stroke=%22%231C1B19%22 stroke-width=%222%22 stroke-linecap=%22round%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Aptos,Inter,Arial,sans-serif;color:#1C1B19;background:#F5F3EE}
+a{color:#9A3D24}a:hover{color:#6E2A18}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #F5F3EE; font-family: Aptos, Inter, Arial, sans-serif; color: #1C1B19">
+
+<header style="background: #F5F3EE">
+<div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1C1B19; font-weight: 700; font-size: 20px; letter-spacing: 0.12em"><svg aria-hidden="true" width="22" height="26" viewBox="0 0 22 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2h16M3 24h16M5 2c0 6 12 7 12 11s-12 5-12 11M17 2c0 6-12 7-12 11s12 5 12 11"></path></svg>KAIRON <span style="font-weight: 600; letter-spacing: 0.04em; color: #9A3D24">Obras</span></a>
+<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: 15px">
+<a href="index.html" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Início</a>
+<a href="bots.html" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Bots</a>
+<a href="escala.html" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Escala 6x1</a>
+<a href="#pacotes" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Pacotes</a>
+<a href="#contato" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; background: #9A3D24; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600">Agendar diagnóstico</a>
+</nav>
+</div>
+</header>
+
+<section style="background: #F5F3EE">
+<div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 96px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #9A3D24">Project controls para obras de médio porte no RJ</p>
+<h1 style="margin: 0; font-size: 56px; line-height: 1.06; font-weight: 700; letter-spacing: -0.02em">Sua obra no prazo e no orçamento, com números toda semana.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.5; color: #4A4741">Montamos e operamos o controle da sua obra: cronograma físico-financeiro, medição, custo e riscos num painel único. Você decide com o atraso ainda pequeno.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a href="#contato" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #9A3D24; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px">Enviar o cronograma da obra</a>
+<a href="#como" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #FFFFFF; color: #1C1B19; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px; border: 1px solid #CFC9BD">Ver como funciona</a>
+</div>
+</div>
+<figure style="flex: 1 1 400px; margin: 0; display: flex; flex-direction: column; gap: 16px; background: #FFFFFF; border-radius: 16px; padding: 28px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
+<b style="font-size: 16px">Curva S | planejado x real</b>
+<span style="font-size: 13px; color: #5E5A53; background: #F1EEE8; padding: 4px 10px; border-radius: 6px">Painel de exemplo</span>
+</div>
+<svg role="img" aria-label="Gráfico ilustrativo de Curva S comparando avanço planejado e avanço real" viewBox="0 0 400 220" style="width: 100%; height: auto">
+<path d="M20 200 H390" stroke="#DDD8CE" stroke-width="1"></path>
+<path d="M20 20 V200" stroke="#DDD8CE" stroke-width="1"></path>
+<path d="M20 198 C 120 192, 170 120, 230 80 S 340 26, 390 22" fill="none" stroke="#1C1B19" stroke-width="3"></path>
+<path d="M20 198 C 120 196, 170 150, 230 120" fill="none" stroke="#9A3D24" stroke-width="3"></path>
+<circle cx="230" cy="120" r="6" fill="#9A3D24"></circle>
+<path d="M230 80 V120" stroke="#9A3D24" stroke-width="2" stroke-dasharray="4 4"></path>
+</svg>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; color: #4A4741">
+<span style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 18px; height: 3px; background: #1C1B19"></span>Planejado</span>
+<span style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 18px; height: 3px; background: #9A3D24"></span>Real</span>
+<span>Alerta: desvio acima da tolerância</span>
+</div>
+</figure>
+</div>
+</section>
+
+<section style="background: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">O atraso não aparece de repente</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E5A53; max-width: 760px">Ele se acumula em silêncio quando o físico está numa planilha, o financeiro em outra e a medição chega semanas depois. 79% das empresas da cadeia da construção apontam a imprevisibilidade de custos como causa de baixa produtividade (Deloitte, 2022).</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Cronograma esquecido</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Feito para aprovar a obra e não atualizado depois.</span></div>
+<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Medição solta</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Avanço medido à mão, sem ligação com o orçamento.</span></div>
+<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Custo sem alerta</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">O estouro só aparece no fechamento do mês.</span></div>
+<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Empreiteiros sem controle</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Pagamento sem conferência do que foi executado.</span></div>
+</div>
+</div>
+</section>
+
+<section style="background: #1C1B19; color: #F5F3EE">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<h2 style="flex: 1 1 380px; margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; color: #FFFFFF">Um escritório de controle de obra, sem montar um escritório.</h2>
+<p style="flex: 1 1 420px; margin: 0; font-size: 18px; line-height: 1.6; color: #D8D3C8">Você mantém a engenharia de campo. Nós cuidamos do controle: atualizamos o cronograma, cruzamos medição e custo, e entregamos o painel e o relatório semanal prontos para a diretoria ou para o cliente final.</p>
+</div>
+</section>
+
+<section id="como" style="background: #F5F3EE">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Como funciona</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 20px">
+<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">1</span><b style="font-size: 19px">Diagnóstico</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Você envia cronograma e orçamento. Devolvemos um raio-x dos riscos de prazo e custo.</span></li>
+<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">2</span><b style="font-size: 19px">Setup</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Estruturamos EAP, linha de base, Curva S, critérios de medição e o painel.</span></li>
+<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">3</span><b style="font-size: 19px">Acompanhamento</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Medição, atualização e relatório toda semana, com alertas de desvio.</span></li>
+<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">4</span><b style="font-size: 19px">Entrega</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Relatório de encerramento com o histórico de prazo, custo e lições para a próxima obra.</span></li>
+</ol>
+</div>
+</section>
+
+<section style="background: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">O que você recebe</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Cronograma físico-financeiro</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Atividades, caminho crítico e desembolso previsto por mês.</span></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Curva S planejado x real</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">O avanço da obra em uma imagem, atualizada toda semana.</span></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Boletim de medição</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Base para pagar empreiteiros pelo que foi de fato executado.</span></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Painel em Power BI</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Prazo, custo e avanço no celular, sem depender de planilha.</span></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Alertas de desvio</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Aviso automático quando prazo ou custo saem da tolerância.</span></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Matriz de riscos</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Riscos priorizados, com responsável e plano de resposta.</span></div>
+</div>
+</div>
+</section>
+
+<section id="pacotes" style="background: #F5F3EE">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Pacotes</h2>
+<p style="margin: 0; font-size: 18px; color: #5E5A53">Comece pelo diagnóstico. O plano mensal é onde o controle gera resultado.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+<div style="flex: 1 1 300px; background: #FFFFFF; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<b style="font-size: 22px">Diagnóstico</b>
+<span style="font-size: 28px; font-weight: 700">sob consulta</span>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #4A4741"><li>Análise do cronograma e do orçamento</li><li>Riscos de prazo e custo priorizados</li><li>Entrega em 5 dias úteis</li></ul>
+<a href="#contato" style="margin-top: auto; display: inline-flex; justify-content: center; align-items: center; min-height: 48px; border-radius: 8px; border: 1px solid #9A3D24; color: #9A3D24; text-decoration: none; font-weight: 600">Pedir diagnóstico</a>
+</div>
+<div style="flex: 1 1 300px; background: #FFFFFF; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<b style="font-size: 22px">Setup do controle</b>
+<span style="font-size: 28px; font-weight: 700">sob consulta</span>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #4A4741"><li>EAP, linha de base e Curva S</li><li>Critérios de medição</li><li>Painel Power BI configurado</li></ul>
+<a href="#contato" style="margin-top: auto; display: inline-flex; justify-content: center; align-items: center; min-height: 48px; border-radius: 8px; border: 1px solid #9A3D24; color: #9A3D24; text-decoration: none; font-weight: 600">Solicitar proposta</a>
+</div>
+<div style="flex: 1 1 300px; background: #1C1B19; color: #F5F3EE; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<span style="align-self: flex-start; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: #9A3D24; color: #FFFFFF; padding: 6px 12px; border-radius: 6px">Recomendado</span>
+<b style="font-size: 22px; color: #FFFFFF">Controle mensal</b>
+<span style="font-size: 28px; font-weight: 700; color: #FFFFFF">sob consulta</span>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #D8D3C8"><li>Medição e atualização semanais</li><li>Relatório executivo e alertas</li><li>Reunião quinzenal de análise</li></ul>
+<a href="#contato" style="margin-top: auto; display: inline-flex; justify-content: center; align-items: center; min-height: 48px; border-radius: 8px; background: #FFFFFF; color: #1C1B19; text-decoration: none; font-weight: 600">Falar com a equipe</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 700">Para quem</h2>
+<ul style="margin: 0; padding-left: 20px; font-size: 18px; line-height: 1.8; color: #4A4741">
+<li>Construtoras pequenas e médias</li>
+<li>Incorporadoras com várias obras em paralelo</li>
+<li>Retrofit e reformas comerciais</li>
+<li>Condomínios em obra de fachada, telhado ou áreas comuns</li>
+</ul>
+</div>
+<div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 700">Por que a KAIRON</h2>
+<ul style="margin: 0; padding-left: 20px; font-size: 18px; line-height: 1.8; color: #4A4741">
+<li>Método de controle de grandes projetos aplicado à obra média</li>
+<li>Engenharia civil e engenharia de produção na mesma equipe</li>
+<li>Painel que se atualiza com automação, não com retrabalho</li>
+<li>Sem software caro: usamos o que você já tem</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section style="background: #F5F3EE">
+<div style="max-width: 860px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0 0 16px; font-size: 40px; line-height: 1.15; font-weight: 700">Perguntas frequentes</h2>
+<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">Preciso comprar algum software?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">Não. Trabalhamos com Excel, MS Project e Power BI. Se a obra já usa um sistema de gestão, integramos com ele.</p></details>
+<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">Vocês ficam no canteiro?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">O controle é feito à distância, com visitas de medição conforme o plano contratado.</p></details>
+<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">A obra já começou. Ainda dá tempo?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">Sim. Reconstruímos a linha de base a partir do que já foi executado e passamos a controlar dali em diante.</p></details>
+<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">Atendem fora do Rio de Janeiro?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">O foco é o RJ. Obras em outras cidades são avaliadas caso a caso.</p></details>
+</div>
+</section>
+
+<section id="contato" style="background: #9A3D24; color: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Envie o cronograma da sua obra.</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; color: #F6E4DE">Devolvemos um raio-x de prazo e custo em 5 dias úteis.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a href="index.html#diagnostico" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #FFFFFF; color: #1C1B19; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px">Preencher diagnóstico</a>
+<a href="mailto:contato@kaironbr.com" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px">contato@kaironbr.com</a>
+</div>
+</div>
+</section>
+
+<footer style="background: #1C1B19; color: #D8D3C8">
+<div style="max-width: 1120px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 15px">
+<span style="font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">KAIRON</span>
+<nav aria-label="Outras frentes" style="display: flex; flex-wrap: wrap; gap: 20px"><a href="bots.html" style="color: #D8D3C8">KAIRON Bots</a><a href="escala.html" style="color: #D8D3C8">KAIRON Escala</a></nav>
+<span>kaironbr.com | <a href="mailto:contato@kaironbr.com" style="color: #D8D3C8">contato@kaironbr.com</a></span>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
