@@ -1,0 +1,17 @@
+# KAIRON
+
+> KAIRON é uma empresa de engenharia de processos, automação com inteligência artificial e controle de obras para pequenas e médias empresas no Rio de Janeiro e em São Paulo. Lema: "Processos sob controle, no tempo certo." Contato: contato@kaironbr.com, WhatsApp +55 (21) 98005-0442. Site: https://kaironbr.com
+
+## Soluções
+
+- [KAIRON Bots](https://kaironbr.com/bots): automação de atendimento no WhatsApp, planilhas, documentos e relatórios com IA, usando ferramentas que a empresa já tem (Excel, Google Planilhas, Microsoft 365, Power Automate, Power BI, Python). Sem software caro e sem custo fixo alto. Protótipo em cerca de 5 dias.
+- [KAIRON Obras](https://kaironbr.com/obras): project controls para obras de médio porte no RJ. Cronograma físico-financeiro, curva S, boletins de medição, controle de custos, painel em Power BI e alertas de desvio. Para construtoras, incorporadoras, retrofit e condomínios em obra.
+- [KAIRON Escala](https://kaironbr.com/escala): estudo de impacto do fim da escala 6x1. Dimensionamento de postos, custo mensal por cenário (6x1, 5x2, 12x36), plano de transição e apresentação para assembleia. Para condomínios, clínicas e comércio. Estudo inicial sem custo.
+
+## Método
+
+Medir (tempos, custos, prazos e gargalos), Automatizar (eliminar tarefas repetitivas e integrar planilhas e sistemas), Controlar (painel com indicadores e alertas semanais). Base em Lean e Seis Sigma, com implantação centrada nas pessoas.
+
+## Como contratar
+
+Diagnóstico gratuito com retorno em até 5 dias úteis, depois proposta com preço fechado. Atendimento presencial no Rio de Janeiro e em São Paulo, remoto para todo o Brasil.

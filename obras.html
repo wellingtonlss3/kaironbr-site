@@ -1,202 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KAIRON Obras | Project controls para obras</title>
-<meta name="description" content="KAIRON Obras: project controls para obras de médio porte no RJ. Cronograma físico-financeiro, medição, Curva S e painel semanal.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 22 26%22%3E%3Cpath d=%22M3 2h16M3 24h16M5 2c0 6 12 7 12 11s-12 5-12 11M17 2c0 6-12 7-12 11s12 5 12 11%22 fill=%22none%22 stroke=%22%231C1B19%22 stroke-width=%222%22 stroke-linecap=%22round%22/%3E%3C/svg%3E">
+<title>KAIRON Obras | Controle de prazo e custo de obras no Rio de Janeiro</title>
+<meta name="description" content="Project controls para obras de médio porte no RJ: cronograma físico-financeiro, curva S, medição, custo e painel semanal com alertas. Raio-x em 5 dias úteis.">
+<link rel="canonical" href="https://kaironbr.com/obras">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="KAIRON">
+<meta property="og:title" content="KAIRON Obras | Controle de prazo e custo de obras no Rio de Janeiro">
+<meta property="og:description" content="Project controls para obras de médio porte no RJ: cronograma físico-financeiro, curva S, medição, custo e painel semanal com alertas. Raio-x em 5 dias úteis.">
+<meta property="og:url" content="https://kaironbr.com/obras">
+<meta name="theme-color" content="#1C1B19">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0;font-family:Aptos,Inter,Arial,sans-serif;color:#1C1B19;background:#F5F3EE}
-a{color:#9A3D24}a:hover{color:#6E2A18}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://kaironbr.com/#org",
+   "name": "KAIRON",
+   "alternateName": [
+    "KAIRON Bots",
+    "KAIRON Obras",
+    "KAIRON Escala",
+    "Kairon Automação"
+   ],
+   "url": "https://kaironbr.com/",
+   "email": "contato@kaironbr.com",
+   "telephone": "+5521980050442",
+   "slogan": "Processos sob controle, no tempo certo.",
+   "description": "Empresa de engenharia de processos, automação com inteligência artificial e controle de obras para pequenas e médias empresas, condomínios, construtoras e clínicas no Rio de Janeiro e em São Paulo.",
+   "knowsAbout": [
+    "automação de processos",
+    "inteligência artificial para pequenas empresas",
+    "chatbot de WhatsApp",
+    "automação de planilhas e relatórios",
+    "Power Automate",
+    "Power BI",
+    "Python",
+    "RPA",
+    "project controls",
+    "cronograma físico-financeiro",
+    "curva S",
+    "medição de obras",
+    "escala 6x1",
+    "dimensionamento de equipes",
+    "Lean",
+    "Seis Sigma"
+   ],
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Rio de Janeiro"
+    },
+    {
+     "@type": "City",
+     "name": "São Paulo"
+    },
+    {
+     "@type": "Country",
+     "name": "Brasil"
+    }
+   ],
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+5521980050442",
+    "email": "contato@kaironbr.com",
+    "availableLanguage": "pt-BR"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://kaironbr.com/obras#page",
+   "url": "https://kaironbr.com/obras",
+   "name": "KAIRON Obras | Controle de prazo e custo de obras no Rio de Janeiro",
+   "description": "Project controls para obras de médio porte no RJ: cronograma físico-financeiro, curva S, medição, custo e painel semanal com alertas. Raio-x em 5 dias úteis.",
+   "inLanguage": "pt-BR",
+   "isPartOf": {
+    "@id": "https://kaironbr.com/#site"
+   },
+   "about": {
+    "@id": "https://kaironbr.com/#org"
+   },
+   "dateModified": "2026-11-23"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://kaironbr.com/#site",
+   "url": "https://kaironbr.com/",
+   "name": "KAIRON",
+   "inLanguage": "pt-BR",
+   "publisher": {
+    "@id": "https://kaironbr.com/#org"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://kaironbr.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "KAIRON Obras",
+     "item": "https://kaironbr.com/obras"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Preciso comprar algum software?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Não. A KAIRON trabalha com Excel, MS Project e Power BI. Se a obra já usa um sistema de gestão, integramos com ele."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vocês ficam no canteiro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "O controle é feito à distância, com visitas de medição conforme o plano contratado."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "A obra já começou. Ainda dá tempo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Reconstruímos a linha de base a partir do que já foi executado e passamos a controlar dali em diante."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Atendem fora do Rio de Janeiro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "O foco é o Rio de Janeiro. Obras em outras cidades são avaliadas caso a caso."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O que é curva S?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "É o gráfico do avanço acumulado da obra ao longo do tempo, comparando o planejado com o realizado. Mostra cedo se a obra está atrasando ou gastando acima do previsto."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "name": "KAIRON Obras",
+   "description": "Project controls para obras de médio porte no Rio de Janeiro: cronograma físico-financeiro, curva S, boletins de medição, controle de custos, painel em Power BI e alertas de desvio.",
+   "url": "https://kaironbr.com/obras",
+   "provider": {
+    "@id": "https://kaironbr.com/#org"
+   },
+   "areaServed": [
+    "Rio de Janeiro",
+    "São Paulo",
+    "Brasil"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "KAIRON Obras",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Diagnóstico de cronograma e orçamento"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Setup do controle"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Controle mensal"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}
+</script>
 </head>
-<body>
-<div style="width: 100%; background: #F5F3EE; font-family: Aptos, Inter, Arial, sans-serif; color: #1C1B19">
+<body data-wa="5521980050442">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header id="top"><div class="wrap nav">
+  <a href="/" class="brand" aria-label="KAIRON, página inicial"><svg viewBox='0 0 34 34' aria-hidden='true'><rect width='34' height='34' rx='9' fill='#1C1B19'/><path d='M11 9h12M11 25h12M12 9c0 5.5 10 6.5 10 16M22 9c0 5.5-10 6.5-10 16' stroke='#C9A46A' stroke-width='1.8' fill='none' stroke-linecap='round'/></svg>KAIRON</a>
+  <nav class="menu" id="menu" aria-label="Principal"><a href='/'>Início</a><a href='/bots'>Bots</a><a href='/obras' class=active aria-current=page>Obras</a><a href='/escala'>Escala 6x1</a><a href="#diagnostico" class="btn btn-dark btn-sm">Diagnóstico gratuito</a></nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+</div></header>
+<main id="conteudo">
 
-<header style="background: #F5F3EE">
-<div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1C1B19; font-weight: 700; font-size: 20px; letter-spacing: 0.12em"><svg aria-hidden="true" width="22" height="26" viewBox="0 0 22 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2h16M3 24h16M5 2c0 6 12 7 12 11s-12 5-12 11M17 2c0 6-12 7-12 11s12 5 12 11"></path></svg>KAIRON <span style="font-weight: 600; letter-spacing: 0.04em; color: #9A3D24">Obras</span></a>
-<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: 15px">
-<a href="index.html" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Início</a>
-<a href="bots.html" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Bots</a>
-<a href="escala.html" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Escala 6x1</a>
-<a href="#pacotes" style="color: #1C1B19; text-decoration: none; padding: 12px 0">Pacotes</a>
-<a href="#contato" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; background: #9A3D24; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600">Agendar diagnóstico</a>
-</nav>
-</div>
-</header>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow">KAIRON Obras · Project controls para obras de médio porte no RJ</span>
+    <h1>Sua obra no prazo e no orçamento, <em>com números toda semana.</em></h1>
+    <p class="lead">Montamos e operamos o controle da sua obra: cronograma físico-financeiro, medição, custo e riscos num painel único. Você decide com o atraso ainda pequeno.</p>
+    <div class="cta-row"><a href="#diagnostico" class="btn btn-dark">Enviar o cronograma da obra</a><a href="#como-funciona" class="btn btn-ghost">Ver como funciona</a></div>
+    <div class="trust"><span>Raio-x em 5 dias úteis</span><span>Engenharia civil e de produção</span><span>Sem software caro</span></div>
+  </div>
+  <div class="visual"><div class='panel'><div class='ptitle'><b>Curva S · planejado x real</b><span>Semana 18</span></div><svg viewBox='0 0 320 170' width='100%' role='img' aria-label='Curva S planejado versus real'><g stroke='#E7E3DC'><line x1='20' y1='150' x2='310' y2='150'/><line x1='20' y1='110' x2='310' y2='110'/><line x1='20' y1='70' x2='310' y2='70'/><line x1='20' y1='30' x2='310' y2='30'/></g><path d='M20 148 C 90 145, 120 120, 160 85 S 250 32, 310 28' fill='none' stroke='#1C1B19' stroke-width='2.5'/><path d='M20 148 C 90 147, 120 132, 160 106 S 190 92, 205 88' fill='none' stroke='#C9A46A' stroke-width='3'/><circle cx='205' cy='88' r='5' fill='#8A5A1F'/></svg><div class='legend'><span><i style='background:#1C1B19'></i>Planejado</span><span><i style='background:#C9A46A'></i>Real</span></div><div class='alert'>Alerta: desvio acima da tolerância na estrutura</div></div></div>
+</div></section>
+<section class="soft"><div class="wrap">
+  <div class='head'><p class='kicker'>O problema</p><h2>O atraso não aparece de repente.</h2><p>Ele se acumula em silêncio quando o físico está numa planilha, o financeiro em outra e a medição chega semanas depois.</p></div>
+  <div class='pains'><div class='pain'><span class='dot'></span><div><b>Cronograma esquecido</b>Feito para aprovar a obra e não atualizado depois.</div></div><div class='pain'><span class='dot'></span><div><b>Medição solta</b>Avanço medido à mão, sem ligação com o orçamento.</div></div><div class='pain'><span class='dot'></span><div><b>Custo sem alerta</b>O estouro só aparece no fechamento do mês.</div></div><div class='pain'><span class='dot'></span><div><b>Empreiteiros sem controle</b>Pagamento sem conferência do que foi executado.</div></div></div>
+</div></section>
+<section><div class="wrap split">
+  <div class='head'><p class='kicker'>A solução</p><h2>Um escritório de controle de obra, sem montar um escritório.</h2><p>Você mantém a engenharia de campo. Nós cuidamos do controle: atualizamos o cronograma, cruzamos medição e custo e entregamos o painel e o relatório semanal prontos para a diretoria ou para o cliente final.</p></div>
+  <ul class="checks"><li>Método de controle de grandes projetos aplicado à obra média</li><li>Engenharia civil e engenharia de produção na mesma equipe</li><li>Painel que se atualiza com automação, não com retrabalho</li><li>Sem software caro: usamos o que você já tem</li></ul>
+</div></section>
+<section id="como-funciona" class="soft"><div class="wrap">
+  <div class='head'><p class='kicker'>Como funciona</p><h2>Do diagnóstico ao encerramento.</h2></div>
+  <div class='grid g4'><div class='step'><span class='n'>01</span><h3>Diagnóstico</h3><p>Você envia cronograma e orçamento. Devolvemos um raio-x dos riscos de prazo e custo.</p></div><div class='step'><span class='n'>02</span><h3>Setup</h3><p>Estruturamos EAP, linha de base, curva S, critérios de medição e o painel.</p></div><div class='step'><span class='n'>03</span><h3>Acompanhamento</h3><p>Medição, atualização e relatório toda semana, com alertas de desvio.</p></div><div class='step'><span class='n'>04</span><h3>Entrega</h3><p>Relatório de encerramento com o histórico de prazo, custo e lições para a próxima obra.</p></div></div>
+</div></section>
+<section><div class="wrap">
+  <div class='head'><p class='kicker'>O que você recebe</p><h2>Seis entregas que tiram a obra do escuro.</h2></div>
+  <div class='grid g3'><div class='tile'><h3>Cronograma físico-financeiro</h3><p>Atividades, caminho crítico e desembolso previsto por mês.</p></div><div class='tile'><h3>Curva S planejado x real</h3><p>O avanço da obra em uma imagem, atualizada toda semana.</p></div><div class='tile'><h3>Boletim de medição</h3><p>Base para pagar empreiteiros pelo que foi de fato executado.</p></div><div class='tile'><h3>Painel em Power BI</h3><p>Prazo, custo e avanço no celular, sem depender de planilha.</p></div><div class='tile'><h3>Alertas de desvio</h3><p>Aviso automático quando prazo ou custo saem da tolerância.</p></div><div class='tile'><h3>Matriz de riscos</h3><p>Riscos priorizados, com responsável e plano de resposta.</p></div></div>
+</div></section>
+<section id="pacotes" class="soft"><div class="wrap">
+  <div class='head'><p class='kicker'>Pacotes</p><h2>Comece pelo diagnóstico.</h2><p>O plano mensal é onde o controle gera resultado.</p></div>
+  <div class='grid g3'><div class='price'><h3>Diagnóstico</h3><p class='val'>Preço fechado sob consulta</p><ul><li>Análise do cronograma e do orçamento</li><li>Riscos de prazo e custo priorizados</li><li>Entrega em 5 dias úteis</li></ul><a href='#diagnostico' class='btn btn-ghost'>Pedir diagnóstico</a></div><div class='price'><h3>Setup do controle</h3><p class='val'>Preço fechado sob consulta</p><ul><li>EAP, linha de base e curva S</li><li>Critérios de medição</li><li>Painel Power BI configurado</li></ul><a href='#diagnostico' class='btn btn-ghost'>Solicitar proposta</a></div><div class='price featured'><span class=badge>Recomendado</span><h3>Controle mensal</h3><p class='val'>Mensalidade sob consulta</p><ul><li>Medição e atualização semanais</li><li>Relatório executivo e alertas</li><li>Reunião quinzenal de análise</li></ul><a href='#diagnostico' class='btn btn-dark'>Falar com a equipe</a></div></div>
+</div></section>
+<section><div class="wrap">
+  <div class='head'><p class='kicker'>Para quem</p><h2>Obras de médio porte que não podem atrasar.</h2></div>
+  <div class='grid g4'><div class='tile'><h3>Construtoras</h3><p>Pequenas e médias, com equipe de campo enxuta.</p></div><div class='tile'><h3>Incorporadoras</h3><p>Várias obras em paralelo e um painel só.</p></div><div class='tile'><h3>Retrofit e reformas</h3><p>Reformas comerciais com prazo curto e cliente exigente.</p></div><div class='tile'><h3>Condomínios</h3><p>Obra de fachada, telhado ou áreas comuns, com prestação de contas aos condôminos.</p></div></div>
+</div></section>
+<section class="soft"><div class="wrap"><div class='head'><p class='kicker'>Perguntas frequentes</p><h2>Antes de enviar o cronograma.</h2></div><div class='faq'><details open><summary>Preciso comprar algum software?</summary><p>Não. A KAIRON trabalha com Excel, MS Project e Power BI. Se a obra já usa um sistema de gestão, integramos com ele.</p></details><details><summary>Vocês ficam no canteiro?</summary><p>O controle é feito à distância, com visitas de medição conforme o plano contratado.</p></details><details><summary>A obra já começou. Ainda dá tempo?</summary><p>Sim. Reconstruímos a linha de base a partir do que já foi executado e passamos a controlar dali em diante.</p></details><details><summary>Atendem fora do Rio de Janeiro?</summary><p>O foco é o Rio de Janeiro. Obras em outras cidades são avaliadas caso a caso.</p></details><details><summary>O que é curva S?</summary><p>É o gráfico do avanço acumulado da obra ao longo do tempo, comparando o planejado com o realizado. Mostra cedo se a obra está atrasando ou gastando acima do previsto.</p></details></div></div></section>
+<section style="padding-bottom:0"></section>
 
-<section style="background: #F5F3EE">
-<div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 96px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #9A3D24">Project controls para obras de médio porte no RJ</p>
-<h1 style="margin: 0; font-size: 56px; line-height: 1.06; font-weight: 700; letter-spacing: -0.02em">Sua obra no prazo e no orçamento, com números toda semana.</h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.5; color: #4A4741">Montamos e operamos o controle da sua obra: cronograma físico-financeiro, medição, custo e riscos num painel único. Você decide com o atraso ainda pequeno.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 16px">
-<a href="#contato" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #9A3D24; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px">Enviar o cronograma da obra</a>
-<a href="#como" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #FFFFFF; color: #1C1B19; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px; border: 1px solid #CFC9BD">Ver como funciona</a>
-</div>
-</div>
-<figure style="flex: 1 1 400px; margin: 0; display: flex; flex-direction: column; gap: 16px; background: #FFFFFF; border-radius: 16px; padding: 28px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<b style="font-size: 16px">Curva S | planejado x real</b>
-<span style="font-size: 13px; color: #5E5A53; background: #F1EEE8; padding: 4px 10px; border-radius: 6px">Painel de exemplo</span>
-</div>
-<svg role="img" aria-label="Gráfico ilustrativo de Curva S comparando avanço planejado e avanço real" viewBox="0 0 400 220" style="width: 100%; height: auto">
-<path d="M20 200 H390" stroke="#DDD8CE" stroke-width="1"></path>
-<path d="M20 20 V200" stroke="#DDD8CE" stroke-width="1"></path>
-<path d="M20 198 C 120 192, 170 120, 230 80 S 340 26, 390 22" fill="none" stroke="#1C1B19" stroke-width="3"></path>
-<path d="M20 198 C 120 196, 170 150, 230 120" fill="none" stroke="#9A3D24" stroke-width="3"></path>
-<circle cx="230" cy="120" r="6" fill="#9A3D24"></circle>
-<path d="M230 80 V120" stroke="#9A3D24" stroke-width="2" stroke-dasharray="4 4"></path>
-</svg>
-<div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; color: #4A4741">
-<span style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 18px; height: 3px; background: #1C1B19"></span>Planejado</span>
-<span style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 18px; height: 3px; background: #9A3D24"></span>Real</span>
-<span>Alerta: desvio acima da tolerância</span>
-</div>
-</figure>
-</div>
-</section>
-
-<section style="background: #FFFFFF">
-<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">O atraso não aparece de repente</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E5A53; max-width: 760px">Ele se acumula em silêncio quando o físico está numa planilha, o financeiro em outra e a medição chega semanas depois. 79% das empresas da cadeia da construção apontam a imprevisibilidade de custos como causa de baixa produtividade (Deloitte, 2022).</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Cronograma esquecido</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Feito para aprovar a obra e não atualizado depois.</span></div>
-<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Medição solta</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Avanço medido à mão, sem ligação com o orçamento.</span></div>
-<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Custo sem alerta</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">O estouro só aparece no fechamento do mês.</span></div>
-<div style="flex: 1 1 240px; background: #F8F6F2; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><b style="font-size: 18px">Empreiteiros sem controle</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Pagamento sem conferência do que foi executado.</span></div>
-</div>
-</div>
-</section>
-
-<section style="background: #1C1B19; color: #F5F3EE">
-<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
-<h2 style="flex: 1 1 380px; margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; color: #FFFFFF">Um escritório de controle de obra, sem montar um escritório.</h2>
-<p style="flex: 1 1 420px; margin: 0; font-size: 18px; line-height: 1.6; color: #D8D3C8">Você mantém a engenharia de campo. Nós cuidamos do controle: atualizamos o cronograma, cruzamos medição e custo, e entregamos o painel e o relatório semanal prontos para a diretoria ou para o cliente final.</p>
-</div>
-</section>
-
-<section id="como" style="background: #F5F3EE">
-<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Como funciona</h2>
-<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 20px">
-<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">1</span><b style="font-size: 19px">Diagnóstico</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Você envia cronograma e orçamento. Devolvemos um raio-x dos riscos de prazo e custo.</span></li>
-<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">2</span><b style="font-size: 19px">Setup</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Estruturamos EAP, linha de base, Curva S, critérios de medição e o painel.</span></li>
-<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">3</span><b style="font-size: 19px">Acompanhamento</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Medição, atualização e relatório toda semana, com alertas de desvio.</span></li>
-<li style="flex: 1 1 230px; background: #FFFFFF; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 32px; font-weight: 700; color: #9A3D24">4</span><b style="font-size: 19px">Entrega</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Relatório de encerramento com o histórico de prazo, custo e lições para a próxima obra.</span></li>
-</ol>
-</div>
-</section>
-
-<section style="background: #FFFFFF">
-<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">O que você recebe</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Cronograma físico-financeiro</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Atividades, caminho crítico e desembolso previsto por mês.</span></div>
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Curva S planejado x real</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">O avanço da obra em uma imagem, atualizada toda semana.</span></div>
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Boletim de medição</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Base para pagar empreiteiros pelo que foi de fato executado.</span></div>
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Painel em Power BI</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Prazo, custo e avanço no celular, sem depender de planilha.</span></div>
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Alertas de desvio</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Aviso automático quando prazo ou custo saem da tolerância.</span></div>
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; padding: 8px 0"><b style="font-size: 18px">Matriz de riscos</b><span style="font-size: 16px; line-height: 1.5; color: #4A4741">Riscos priorizados, com responsável e plano de resposta.</span></div>
-</div>
-</div>
-</section>
-
-<section id="pacotes" style="background: #F5F3EE">
-<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Pacotes</h2>
-<p style="margin: 0; font-size: 18px; color: #5E5A53">Comece pelo diagnóstico. O plano mensal é onde o controle gera resultado.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
-<div style="flex: 1 1 300px; background: #FFFFFF; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-<b style="font-size: 22px">Diagnóstico</b>
-<span style="font-size: 28px; font-weight: 700">sob consulta</span>
-<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #4A4741"><li>Análise do cronograma e do orçamento</li><li>Riscos de prazo e custo priorizados</li><li>Entrega em 5 dias úteis</li></ul>
-<a href="#contato" style="margin-top: auto; display: inline-flex; justify-content: center; align-items: center; min-height: 48px; border-radius: 8px; border: 1px solid #9A3D24; color: #9A3D24; text-decoration: none; font-weight: 600">Pedir diagnóstico</a>
-</div>
-<div style="flex: 1 1 300px; background: #FFFFFF; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-<b style="font-size: 22px">Setup do controle</b>
-<span style="font-size: 28px; font-weight: 700">sob consulta</span>
-<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #4A4741"><li>EAP, linha de base e Curva S</li><li>Critérios de medição</li><li>Painel Power BI configurado</li></ul>
-<a href="#contato" style="margin-top: auto; display: inline-flex; justify-content: center; align-items: center; min-height: 48px; border-radius: 8px; border: 1px solid #9A3D24; color: #9A3D24; text-decoration: none; font-weight: 600">Solicitar proposta</a>
-</div>
-<div style="flex: 1 1 300px; background: #1C1B19; color: #F5F3EE; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-<span style="align-self: flex-start; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: #9A3D24; color: #FFFFFF; padding: 6px 12px; border-radius: 6px">Recomendado</span>
-<b style="font-size: 22px; color: #FFFFFF">Controle mensal</b>
-<span style="font-size: 28px; font-weight: 700; color: #FFFFFF">sob consulta</span>
-<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #D8D3C8"><li>Medição e atualização semanais</li><li>Relatório executivo e alertas</li><li>Reunião quinzenal de análise</li></ul>
-<a href="#contato" style="margin-top: auto; display: inline-flex; justify-content: center; align-items: center; min-height: 48px; border-radius: 8px; background: #FFFFFF; color: #1C1B19; text-decoration: none; font-weight: 600">Falar com a equipe</a>
-</div>
-</div>
-</div>
-</section>
-
-<section style="background: #FFFFFF">
-<div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 48px">
-<div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 700">Para quem</h2>
-<ul style="margin: 0; padding-left: 20px; font-size: 18px; line-height: 1.8; color: #4A4741">
-<li>Construtoras pequenas e médias</li>
-<li>Incorporadoras com várias obras em paralelo</li>
-<li>Retrofit e reformas comerciais</li>
-<li>Condomínios em obra de fachada, telhado ou áreas comuns</li>
-</ul>
-</div>
-<div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 700">Por que a KAIRON</h2>
-<ul style="margin: 0; padding-left: 20px; font-size: 18px; line-height: 1.8; color: #4A4741">
-<li>Método de controle de grandes projetos aplicado à obra média</li>
-<li>Engenharia civil e engenharia de produção na mesma equipe</li>
-<li>Painel que se atualiza com automação, não com retrabalho</li>
-<li>Sem software caro: usamos o que você já tem</li>
-</ul>
-</div>
-</div>
-</section>
-
-<section style="background: #F5F3EE">
-<div style="max-width: 860px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0 0 16px; font-size: 40px; line-height: 1.15; font-weight: 700">Perguntas frequentes</h2>
-<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">Preciso comprar algum software?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">Não. Trabalhamos com Excel, MS Project e Power BI. Se a obra já usa um sistema de gestão, integramos com ele.</p></details>
-<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">Vocês ficam no canteiro?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">O controle é feito à distância, com visitas de medição conforme o plano contratado.</p></details>
-<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">A obra já começou. Ainda dá tempo?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">Sim. Reconstruímos a linha de base a partir do que já foi executado e passamos a controlar dali em diante.</p></details>
-<details style="background: #FFFFFF; border-radius: 12px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer; min-height: 28px">Atendem fora do Rio de Janeiro?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #4A4741">O foco é o RJ. Obras em outras cidades são avaliadas caso a caso.</p></details>
-</div>
-</section>
-
-<section id="contato" style="background: #9A3D24; color: #FFFFFF">
-<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
-<div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Envie o cronograma da sua obra.</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.5; color: #F6E4DE">Devolvemos um raio-x de prazo e custo em 5 dias úteis.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px">
-<a href="index.html#diagnostico" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #FFFFFF; color: #1C1B19; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px">Preencher diagnóstico</a>
-<a href="mailto:contato@kaironbr.com" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 17px">contato@kaironbr.com</a>
-</div>
-</div>
-</section>
-
-<footer style="background: #1C1B19; color: #D8D3C8">
-<div style="max-width: 1120px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 15px">
-<span style="font-weight: 700; letter-spacing: 0.12em; color: #FFFFFF">KAIRON</span>
-<nav aria-label="Outras frentes" style="display: flex; flex-wrap: wrap; gap: 20px"><a href="bots.html" style="color: #D8D3C8">KAIRON Bots</a><a href="escala.html" style="color: #D8D3C8">KAIRON Escala</a></nav>
-<span>kaironbr.com | <a href="mailto:contato@kaironbr.com" style="color: #D8D3C8">contato@kaironbr.com</a></span>
-</div>
-</footer>
-
-</div>
-
+<section id="diagnostico" style="padding-top:0"><div class="wrap"><div class="final">
+  <div>
+    <p class="kicker">Diagnóstico gratuito</p>
+    <h2>Envie o cronograma da sua obra.</h2>
+    <p>Devolvemos um raio-x de prazo e custo em até 5 dias úteis.</p>
+    <div class="alt">Prefere direto? <a href="https://wa.me/5521980050442" target="_blank" rel="noopener">WhatsApp +55 (21) 98005-0442</a> ou <a href="mailto:contato@kaironbr.com">contato@kaironbr.com</a></div>
+  </div>
+  <form id="diag-form">
+    <div class="form-row">
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Empresa ou condomínio<input name="empresa" required autocomplete="organization"></label>
+    </div>
+    <label>Seu WhatsApp<input name="whatsapp" type="tel" autocomplete="tel"></label>
+    <label>Principal desafio<select name="desafio"><option>Automatizar rotinas e relatórios</option><option selected>Controlar prazo, custo e medições de obra</option><option>Revisar a escala da equipe (6x1)</option><option>Ainda não sei</option></select></label>
+    <label>Conte em poucas linhas<textarea name="msg" rows="3"></textarea></label>
+    <div class="cta-row" style="margin:6px 0 0">
+      <button class="btn btn-light" type="submit" value="wa">Enviar pelo WhatsApp</button>
+      <button class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.35)" type="submit" value="email">Enviar por e-mail</button>
+    </div>
+  </form>
+</div></div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot">
+    <div><a href="/" class="brand" style="margin-bottom:14px;color:var(--ink)"><svg viewBox='0 0 34 34' aria-hidden='true'><rect width='34' height='34' rx='9' fill='#1C1B19'/><path d='M11 9h12M11 25h12M12 9c0 5.5 10 6.5 10 16M22 9c0 5.5-10 6.5-10 16' stroke='#C9A46A' stroke-width='1.8' fill='none' stroke-linecap='round'/></svg>KAIRON</a>
+      <p>Processos sob controle, no tempo certo. Automação, IA e engenharia de processos para pequenas e médias empresas no Rio de Janeiro e em São Paulo.</p></div>
+    <div><h4>Soluções</h4><a href="/bots">KAIRON Bots</a><a href="/obras">KAIRON Obras</a><a href="/escala">KAIRON Escala</a></div>
+    <div><h4>Empresa</h4><a href="/#como-funciona">Método</a><a href="/#duvidas">Dúvidas frequentes</a><a href="#diagnostico">Diagnóstico gratuito</a></div>
+    <div><h4>Contato</h4><a href="https://wa.me/5521980050442" target="_blank" rel="noopener">WhatsApp +55 (21) 98005-0442</a><a href="mailto:contato@kaironbr.com">contato@kaironbr.com</a><p style="padding-top:4px">Rio de Janeiro e São Paulo</p></div>
+  </div>
+  <div class="legal"><span>© 2026 KAIRON. Todos os direitos reservados.</span><span>kaironbr.com</span></div>
+</div></footer>
+<a class="wa-float" href="https://wa.me/5521980050442?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20KAIRON." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox='0 0 32 32' aria-hidden='true'><path fill='#fff' d='M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.5 1.8 6.4L3 29l7.2-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.2c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.1-4.1-.2-.4c-1-1.6-1.6-3.5-1.6-5.4C5.4 9.9 10.2 5.2 16 5.2s10.6 4.7 10.6 10.5S21.8 26.2 16 26.2zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z'/></svg></a>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
