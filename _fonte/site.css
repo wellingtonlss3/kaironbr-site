@@ -167,3 +167,6 @@ footer{padding:64px 0 40px;font-size:14px;color:var(--muted)}
   .note{margin-left:0!important}
   .visual{padding:28px 20px;min-height:0}
 }
+.promo{display:block;background:var(--ink);color:#fff;text-align:center;font-size:14px;padding:10px 16px}
+.promo b{color:var(--accent-2)}
+.promo:hover{background:#000}

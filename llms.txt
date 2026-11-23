@@ -8,6 +8,10 @@
 - [KAIRON Obras](https://kaironbr.com/obras): project controls para obras de médio porte no RJ. Cronograma físico-financeiro, curva S, boletins de medição, controle de custos, painel em Power BI e alertas de desvio. Para construtoras, incorporadoras, retrofit e condomínios em obra.
 - [KAIRON Escala](https://kaironbr.com/escala): estudo de impacto do fim da escala 6x1. Dimensionamento de postos, custo mensal por cenário (6x1, 5x2, 12x36), plano de transição e apresentação para assembleia. Para condomínios, clínicas e comércio. Estudo inicial sem custo.
 
+## Oferta atual
+
+- [Black Friday: Agente SDR 24h no WhatsApp](https://kaironbr.com/black-friday): implantação completa por R$ 920 até 30/11/2026, 5 vagas.
+
 ## Método
 
 Medir (tempos, custos, prazos e gargalos), Automatizar (eliminar tarefas repetitivas e integrar planilhas e sistemas), Controlar (painel com indicadores e alertas semanais). Base em Lean e Seis Sigma, com implantação centrada nas pessoas.

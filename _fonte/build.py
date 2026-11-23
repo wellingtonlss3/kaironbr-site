@@ -85,6 +85,16 @@ CHALLENGES = ["Automatizar rotinas e relatórios", "Controlar prazo, custo e med
               "Revisar a escala da equipe (6x1)", "Ainda não sei"]
 
 
+PROMO_ATE = "2026-11-30"
+
+
+def promo_bar(slug):
+    if TODAY > PROMO_ATE or slug == "black-friday":
+        return ""
+    return ("<a class='promo' href='/black-friday'><b>Black Friday:</b> Agente SDR de IA no seu WhatsApp, 24h, "
+            "implantação por R$ 920. Só até 30/11 →</a>")
+
+
 def page(slug, title, desc, body, ld_extra, h1_short):
     canonical = f"{SITE}/" if slug == "index" else f"{SITE}/{slug}"
     nav = "".join(f"<a href='{href}'{' class=active aria-current=page' if s == slug else ''}>{label}</a>"
@@ -131,6 +141,7 @@ def page(slug, title, desc, body, ld_extra, h1_short):
 </head>
 <body data-wa="{WA}">
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+{promo_bar(slug)}
 <header id="top"><div class="wrap nav">
   <a href="/" class="brand" aria-label="KAIRON, página inicial">{LOGO}KAIRON</a>
   <nav class="menu" id="menu" aria-label="Principal">{nav}<a href="#diagnostico" class="btn btn-dark btn-sm">Diagnóstico gratuito</a></nav>
@@ -421,6 +432,78 @@ escala_body += f"""
 {final_cta("Envie a escala atual da sua equipe.", "Devolvemos o estudo inicial em até 5 dias úteis, sem custo.", CHALLENGES, 2)}"""
 escala_ld = [faq_ld(escala_faq), service_ld("KAIRON Escala", "Estudo de impacto do fim da escala 6x1 para condomínios, clínicas e comércio: dimensionamento de postos, custo mensal por cenário (6x1, 5x2, 12x36) e plano de transição.", f"{SITE}/escala", ["Estudo inicial sem custo", "Plano de transição", "Apresentação para assembleia"])]
 
+
+# ---------------------------------------------------------------- BLACK FRIDAY
+WA_BF = f"https://wa.me/{WA}?text=" + "Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20do%20Agente%20SDR%2024h%20da%20Black%20Friday%20(R%24%20920)."
+bf_faq = [
+    ("O que o agente faz, exatamente?", "Responde seus clientes no WhatsApp 24 horas por dia com as informações do seu negócio, tira dúvidas de preço e horário, faz perguntas para entender o que o cliente precisa, agenda e envia ao seu vendedor um resumo de cada cliente pronto para fechar."),
+    ("Além dos R$ 920, existe custo mensal?", "Os R$ 920 cobrem a implantação completa e 30 dias de ajustes. O uso do WhatsApp Business oficial e do modelo de IA tem custo variável, cobrado direto pelas plataformas conforme o volume de conversas. A KAIRON informa a estimativa para o seu volume antes de você pagar qualquer coisa."),
+    ("Preciso trocar meu número de WhatsApp?", "Na maioria dos casos é possível usar o número que você já tem. Isso é confirmado na conversa inicial, antes do pagamento."),
+    ("E se o cliente perguntar algo que o agente não sabe?", "O agente avisa que vai chamar alguém da equipe e transfere a conversa para um humano, com o histórico completo."),
+    ("O WhatsApp permite agente de IA?", "Sim. A política do WhatsApp Business proíbe assistentes de IA de uso geral, como o ChatGPT dentro do WhatsApp, mas permite que empresas usem IA para atender e vender aos próprios clientes. É exatamente esse o uso do agente."),
+    ("Em quanto tempo fica pronto?", "Em até 7 dias úteis depois que você envia as informações do negócio: serviços, preços, horários e as perguntas mais comuns dos clientes."),
+    ("Como funciona o pagamento?", "Metade via Pix para reservar a vaga e metade na entrega, com o agente funcionando no seu WhatsApp."),
+    ("Até quando vale a oferta?", "Até 30/11/2026 ou até acabarem as 5 vagas, o que acontecer primeiro."),
+]
+bf_body = f"""
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow">Black Friday KAIRON · até 30/11 · 5 vagas</span>
+    <h1>Seu WhatsApp atendendo e vendendo <em>24 horas por dia.</em></h1>
+    <p class="lead">Um agente SDR de inteligência artificial que responde, qualifica e agenda seus clientes no WhatsApp, inclusive à noite e no fim de semana. Implantação completa por <b>R$ 920</b>.</p>
+    <div class="cta-row"><a href="{WA_BF}" target="_blank" rel="noopener" class="btn btn-wa">{WA_ICON}Garantir minha vaga</a><a href="#incluido" class="btn btn-ghost">O que está incluído</a></div>
+    <div class="trust"><span>Pronto em até 7 dias úteis</span><span>30 dias de ajustes</span><span>Transferência para humano</span></div>
+  </div>
+  <div class="visual">{notes([("WhatsApp · 23:47", "agora", "Oi! Quanto custa a limpeza de pele?", "Cliente chegou pelo Instagram."), ("Agente KAIRON", "23:47", "A partir de R$ 180. Quinta 10h ou sexta 15h?", "Respondeu em segundos."), ("Agenda", "23:48", "Sexta, 15h, confirmado", "Lembrete agendado para a véspera."), ("Para você, de manhã", "08:00", "3 clientes agendados durante a noite", "Resumo pronto no seu WhatsApp.")])}</div>
+</div></section>
+<section class="soft"><div class="wrap">
+  {head("O problema", "O cliente fecha com quem responde primeiro.")}
+  {pains([("Ninguém responde à noite", "A mensagem das 23h só é vista no dia seguinte, quando o cliente já fechou com outro."), ("Mesmas perguntas o dia todo", "Preço, horário, endereço e formas de pagamento, respondidos um a um."), ("Vendedor gastando tempo com curioso", "Quem só queria saber o preço toma o mesmo tempo de quem quer comprar."), ("Agenda feita na mão", "Marcar, remarcar e lembrar o cliente consome horas da recepção.")])}
+</div></section>
+<section><div class="wrap">
+  {head("O que o agente faz", "Um SDR que não dorme, não esquece e não demora.")}
+  {tiles([("Responde em segundos", "Dúvidas de preço, horário, serviços e pagamento, 24 horas por dia, 7 dias por semana."), ("Qualifica o cliente", "Pergunta o que o cliente precisa, quando e quanto pretende investir."), ("Agenda e lembra", "Marca horário e envia lembrete antes do atendimento."), ("Entrega o lead pronto", "Manda ao vendedor um resumo de cada cliente pronto para fechar.")], 4)}
+</div></section>
+<section id="incluido" class="soft"><div class="wrap split">
+  {head("O que está incluído", "Implantação completa por R$ 920.", "Preço de Black Friday, válido até 30/11/2026 ou enquanto houver vagas. São 5 vagas para garantir a qualidade da implantação.")}
+  <ul class="checks">
+    <li>Agente de IA configurado no WhatsApp da sua empresa</li>
+    <li>Treinamento com seus serviços, preços, horários e perguntas frequentes</li>
+    <li>Roteiro de qualificação feito para o seu tipo de cliente</li>
+    <li>Agendamento e lembretes automáticos</li>
+    <li>Transferência para humano com histórico da conversa</li>
+    <li>Resumo de cada lead qualificado enviado ao vendedor</li>
+    <li>30 dias de ajustes depois da entrega</li>
+  </ul>
+</div></section>
+<section><div class="wrap">
+  {head("Como funciona", "Do pagamento ao agente no ar em até 7 dias úteis.")}
+  {steps([("Reserva", "Você chama no WhatsApp, tira dúvidas e garante a vaga com 50% via Pix."), ("Informações", "Você envia serviços, preços, horários e as perguntas que mais recebe."), ("Implantação", "Configuramos, testamos com você e colocamos o agente no ar."), ("Ajustes", "Durante 30 dias refinamos as respostas com base nas conversas reais.")], 4)}
+</div></section>
+<section class="soft"><div class="wrap">
+  {head("Para quem", "Para quem vende pelo WhatsApp.")}
+  {tiles([("Clínicas e estética", "Agendamento, confirmação e dúvidas de procedimento."), ("Imobiliárias", "Triagem de interessados por região, valor e prazo."), ("Escolas e cursos", "Informações de turma, preço e matrícula."), ("Serviços e comércio", "Orçamento, horário de funcionamento e pedidos.")], 4)}
+</div></section>
+<section><div class="wrap grid g2">
+  <div class="note-box"><h3>Garantia de entrega</h3><p>Se o agente não estiver funcionando no seu WhatsApp em até 7 dias úteis depois que você enviar as informações do negócio, devolvemos 100% do valor pago.</p></div>
+  <div class="note-box" style="background:var(--soft)"><h3>Transparência nos custos</h3><p>Os R$ 920 são a implantação. O uso do WhatsApp oficial e da IA é cobrado direto pelas plataformas, conforme o volume. Você recebe a estimativa antes de pagar.</p></div>
+</div></section>
+<section class="soft"><div class="wrap">{head("Perguntas frequentes", "Antes de garantir sua vaga.")}{faq_html(bf_faq)}</div></section>
+<section style="padding-bottom:0"></section>
+<section id="diagnostico"><div class="wrap"><div class="final">
+  <div><p class="kicker">Black Friday · até 30/11</p><h2>Garanta uma das 5 vagas.</h2><p>Implantação completa do Agente SDR 24h no seu WhatsApp por R$ 920. Chame agora e tire suas dúvidas.</p></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;gap:16px">
+    <a href="{WA_BF}" target="_blank" rel="noopener" class="btn btn-wa" style="height:60px;font-size:17px">Garantir minha vaga no WhatsApp</a>
+    <p style="font-size:15px">Ou escreva para <a href="mailto:contato@kaironbr.com" style="color:#fff;text-decoration:underline">contato@kaironbr.com</a> · WhatsApp {WA_FMT}</p>
+  </div>
+</div></div></section>"""
+bf_ld = [faq_ld(bf_faq), {"@type": "Service", "name": "Agente SDR 24h no WhatsApp", "url": f"{SITE}/black-friday",
+    "description": "Implantação de agente SDR de inteligência artificial no WhatsApp da empresa: responde, qualifica, agenda e envia leads prontos ao vendedor, 24 horas por dia.",
+    "provider": {"@id": f"{SITE}/#org"}, "areaServed": ["Rio de Janeiro", "São Paulo", "Brasil"],
+    "offers": {"@type": "Offer", "name": "Black Friday 2026", "price": "920", "priceCurrency": "BRL",
+               "validFrom": "2026-11-23", "validThrough": "2026-11-30T23:59:59-03:00", "availability": "https://schema.org/LimitedAvailability",
+               "url": f"{SITE}/black-friday"}}]
+
 PAGES = [
     ("index", "KAIRON | Automação de processos, IA e controle de obras no RJ e SP",
      "A KAIRON automatiza atendimento, planilhas e relatórios com IA, controla prazo e custo de obras e calcula o impacto da escala 6x1. Rio de Janeiro e São Paulo. Diagnóstico gratuito.",
@@ -434,6 +517,9 @@ PAGES = [
     ("escala", "KAIRON Escala | Estudo de impacto do fim da escala 6x1",
      "Quanto o fim da escala 6x1 vai custar para seu condomínio, clínica ou comércio? Dimensionamento de postos e custo por cenário (6x1, 5x2, 12x36). Estudo inicial sem custo.",
      escala_body, escala_ld, "KAIRON Escala"),
+    ("black-friday", "Black Friday KAIRON | Agente SDR de IA no WhatsApp 24h por R$ 920",
+     "Agente SDR de inteligência artificial no seu WhatsApp: responde, qualifica e agenda clientes 24h. Implantação completa por R$ 920 até 30/11. 5 vagas.",
+     bf_body, bf_ld, "Black Friday"),
 ]
 
 os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
@@ -455,7 +541,7 @@ with open(os.path.join(OUT, "robots.txt"), "w") as f:
 
 with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-    for slug, pr in [("", "1.0"), ("bots", "0.9"), ("obras", "0.9"), ("escala", "0.9")]:
+    for slug, pr in [("", "1.0"), ("bots", "0.9"), ("obras", "0.9"), ("escala", "0.9"), ("black-friday", "0.8")]:
         f.write(f"  <url><loc>{SITE}/{slug}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority></url>\n")
     f.write("</urlset>\n")
 
@@ -469,6 +555,10 @@ with open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8") as f:
 - [KAIRON Bots]({SITE}/bots): automação de atendimento no WhatsApp, planilhas, documentos e relatórios com IA, usando ferramentas que a empresa já tem (Excel, Google Planilhas, Microsoft 365, Power Automate, Power BI, Python). Sem software caro e sem custo fixo alto. Protótipo em cerca de 5 dias.
 - [KAIRON Obras]({SITE}/obras): project controls para obras de médio porte no RJ. Cronograma físico-financeiro, curva S, boletins de medição, controle de custos, painel em Power BI e alertas de desvio. Para construtoras, incorporadoras, retrofit e condomínios em obra.
 - [KAIRON Escala]({SITE}/escala): estudo de impacto do fim da escala 6x1. Dimensionamento de postos, custo mensal por cenário (6x1, 5x2, 12x36), plano de transição e apresentação para assembleia. Para condomínios, clínicas e comércio. Estudo inicial sem custo.
+
+## Oferta atual
+
+- [Black Friday: Agente SDR 24h no WhatsApp]({SITE}/black-friday): implantação completa por R$ 920 até 30/11/2026, 5 vagas.
 
 ## Método
 
